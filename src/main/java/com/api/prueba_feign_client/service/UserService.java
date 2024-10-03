@@ -23,16 +23,16 @@ public class UserService implements UserServiceInterface {
 
     @Override
     public void saveUser(UserDTO user) {
-
+        feignClient.saveUser(user);
     }
 
     @Override
     public void updateUser(String id, UserDTO user) {
-
+        feignClient.updateUser(id, user);
     }
 
     @Override
     public void deleteUser(String id) {
-
+        feignClient.deleteUser(id);
     }
 }
